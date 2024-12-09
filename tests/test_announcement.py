@@ -24,12 +24,12 @@ class TestAnnouncement(unittest.TestCase):
         cls.wait = WebDriverWait(cls.driver, 15)
 
     def test_announcement(self):
-        # 點擊 Visit Site 按鈕
-        visit_button = self.wait.until(
-            EC.presence_of_element_located((By.XPATH, "//button[contains(text(), 'Visit Site')]"))
-        )
-        visit_button.click()
-        time.sleep(2)  # 等待頁面過渡效果
+        # # 點擊 Visit Site 按鈕
+        # visit_button = self.wait.until(
+        #     EC.presence_of_element_located((By.XPATH, "//button[contains(text(), 'Visit Site')]"))
+        # )
+        # visit_button.click()
+        # time.sleep(2)  # 等待頁面過渡效果
 
         # 找到 username 輸入框並輸入內容
         username_input = self.wait.until(EC.presence_of_element_located((By.ID, "username")))
